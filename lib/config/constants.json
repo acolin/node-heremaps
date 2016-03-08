@@ -5,12 +5,13 @@
   },
   "ACCEPTED_PARAMS": {
     "geocode": {
-      "searchtext": "string",
-      "mapview": "string",
-      "housenumber": "string",
-      "street": "string",
-      "city": "string",
-      "country": "string"
+      "searchtext": "string"
+    }
+  },
+  "HEREMAPS_ENDPOINTS": {
+    "geocode": {
+      "subdomain": "geocoder",
+      "path": "geocode.json"
     }
   }
 }
