@@ -1,0 +1,16 @@
+{
+  "ACCEPTED_CONFIG_KEYS": {
+    "app_id": "string",
+    "app_code": "string"
+  },
+  "ACCEPTED_PARAMS": {
+    "geocode": {
+      "searchtext": "string",
+      "mapview": "string",
+      "housenumber": "string",
+      "street": "string",
+      "city": "string",
+      "country": "string"
+    }
+  }
+}
