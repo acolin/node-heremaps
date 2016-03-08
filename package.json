@@ -1,0 +1,60 @@
+{
+  "name": "node-heremaps",
+  "version": "0.0.0",
+  "description": "Here maps API wrapper for Node.js",
+  "homepage": "",
+  "author": {
+    "name": "Arnoldo Rodriguez Colin",
+    "email": "arnoldo@skydrop.com.mx",
+    "url": ""
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "keywords": [
+    "heremaps",
+    "node"
+  ],
+  "devDependencies": {
+    "babel-core": "^5.5.0",
+    "babel-eslint": "^4.1.8",
+    "chai": "^3.5.0",
+    "del": "^2.0.2",
+    "eslint": "~2.1.0",
+    "eslint-config-xo-space": "^0.10.0",
+    "eslint-plugin-babel": "^3.1.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "isparta": "^3.0.3"
+  },
+  "eslintConfig": {
+    "extends": "xo-space/esnext",
+    "env": {
+      "mocha": true
+    },
+    "rules": {
+      "curly": [
+        2,
+        "multi"
+      ]
+    }
+  },
+  "repository": "git@github.com:acolin/node-heremaps.git",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "mocha --compilers js:babel-core/register --recursive"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "check-types": "^6.0.0"
+  }
+}
