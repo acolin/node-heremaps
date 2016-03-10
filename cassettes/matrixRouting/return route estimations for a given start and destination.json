@@ -1,0 +1,45 @@
+[
+  {
+    "scope": "https://route.api.here.com:443",
+    "method": "GET",
+    "path": "/routing/7.2/calculatematrix.json?start0=25.6586716%2C-100.3583278&destination0=25.6522234%2C-100.2942806&mode=fastest%3Bcar%3Btraffic%3Aenabled%3B&summaryAttributes=traveltime%2Cdistance&app_id=Sec29c57bKMo2R0nHgSM&app_code=uXDx5FkbC9AGKOvP7zwZvg&gen=8",
+    "body": "",
+    "status": 200,
+    "response": {
+      "response": {
+        "metaInfo": {
+          "timestamp": "2016-03-10T06:09:05Z",
+          "mapVersion": "8.30.61.157",
+          "moduleVersion": "7.2.66.0-1329",
+          "interfaceVersion": "2.6.21"
+        },
+        "matrixEntry": [
+          {
+            "startIndex": 0,
+            "destinationIndex": 0,
+            "summary": {
+              "distance": 9246,
+              "travelTime": 1018,
+              "costFactor": 1106
+            }
+          }
+        ]
+      }
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "content-type": "application/json;charset=utf-8",
+      "date": "Thu, 10 Mar 2016 06:09:06 GMT",
+      "server": "Apache",
+      "time": "141",
+      "vary": "Accept-Encoding",
+      "x-lastupdatefromtrafficupdater": "2016-03-10 06:08:13 UTC",
+      "x-nlp-irt": "105366",
+      "x-nlp-matrix": "1x1",
+      "x-nlp-tid": "5096ea1e-d096-4278-9094-a13e088aaf98",
+      "x-served-by": "i-805fde03.us-east-1b",
+      "content-length": "268",
+      "connection": "Close"
+    }
+  }
+]
