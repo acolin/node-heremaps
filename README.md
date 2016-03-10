@@ -44,7 +44,7 @@ hmAPI.geocode(geocodeParams, function(err, result){
 var matrixRoutingParams = {
   start0: "25.6586716,-100.3583278",
   destination0: "25.6522234,-100.2942806",
-  mode: "fastest;car;traffic:enabled;" //this mode is set by default
+  mode: "fastest;car;traffic:enabled;" // this mode is set by default
 };
 
 hmAPI.matrixRouting(matrixRoutingParams, function(err, result){
