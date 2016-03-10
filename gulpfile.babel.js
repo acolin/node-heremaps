@@ -12,7 +12,7 @@ import {Instrumenter} from 'isparta';
 
 // Initialize the babel transpiler so ES2015 files gets compiled
 // when they're loaded
-require('babel-core/register');
+import 'babel-core/register';
 
 gulp.task('static', () => {
   return gulp.src(['lib/**/*.js', 'test/**/*.js'])
@@ -42,11 +42,11 @@ gulp.task('test', ["pre-test"], (cb) => {
   gulp.src(['test/**/*.js'])
     .pipe(plumber())
     .pipe(mocha({reporter: 'spec'}))
-    .on('error', function (err) {
+    .on('error', (err) => {
       mochaErr = err;
     })
     .pipe(istanbul.writeReports())
-    .on('end', function () {
+    .on('end', () => {
       cb(mochaErr);
     });
 });
