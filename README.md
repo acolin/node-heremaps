@@ -22,6 +22,8 @@ npm install node-heremaps
 ### Usage
 
 ```javascript
+import HereMapsAPI from 'node-heremaps';
+
 var config = {
   app_id:   '<YOUR-APP-ID>', // to use Google Maps for Work
   app_code: '<YOUR-APP-CODE>', // to use Google Maps for Work
