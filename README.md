@@ -38,7 +38,7 @@ hmAPI.geocode(geocodeParams, function(err, result){
 
 // reverse geocode API
 var matrixRoutingParams = {
-  start0: "25.6586716,-100.3583278"",
+  start0: "25.6586716,-100.3583278",
   destination0: "25.6522234,-100.2942806",
   mode: "fastest;car;traffic:enabled;" //this mode is set by default
 };
