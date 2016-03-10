@@ -26,8 +26,8 @@ var HereMapsAPI = require('node-heremaps').default; //es5
 import HereMapsAPI from 'node-heremaps'; //es6
 
 var config = {
-  app_id:   '<YOUR-APP-ID>', // to use Google Maps for Work
-  app_code: '<YOUR-APP-CODE>', // to use Google Maps for Work
+  app_id:   '<YOUR-APP-ID>',
+  app_code: '<YOUR-APP-CODE>'
 };
 var hmAPI = new HereMapsAPI(config);
 
