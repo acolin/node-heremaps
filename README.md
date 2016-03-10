@@ -22,8 +22,8 @@ npm install node-heremaps
 ### Usage
 
 ```javascript
-var HereMapsAPI = require('node-heremaps').default; //es5
-import HereMapsAPI from 'node-heremaps'; //es6
+var HereMapsAPI = require('node-heremaps').default; // es5
+import HereMapsAPI from 'node-heremaps'; // es6
 
 var config = {
   app_id:   '<YOUR-APP-ID>',
