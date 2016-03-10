@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/acolin/node-heremaps.svg?branch=master)](https://travis-ci.org/acolin/node-heremaps)
 # Here Maps API for Node.js
 
 Based on the [Google Maps API wrapper for Node.js](https://github.com/moshen/node-googlemaps)
