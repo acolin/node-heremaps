@@ -44,6 +44,9 @@
     "extends": "xo-space/esnext",
     "env": {
       "mocha": true
+    },
+    "rules": {
+      "camelcase": [2, {"properties": "never"}]
     }
   },
   "repository": "git@github.com:acolin/node-heremaps.git",
