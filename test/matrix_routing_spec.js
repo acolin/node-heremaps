@@ -45,7 +45,7 @@ describe('matrixRouting', () => {
     expect(cbSpy).to.have.been.called.with(new Error('params.destination0 is required'));
   });
 
-  vcr.it("return routes for a given start and destination", done => {
+  vcr.it("return route estimations for a given start and destination", done => {
     const hereMapsAPI = new Stub();
 
     hereMapsAPI.matrixRouting({start0: "25.6586716,-100.3583278", destination0: "25.6522234,-100.2942806"}, done);
