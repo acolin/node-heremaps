@@ -49,6 +49,6 @@ hmAPI.matrixRouting(matrixRoutingParams, function(err, result){
 });
 ``` 
 
-### Roadmap
+### Future Features & Roadmap
 
 I'm planning on covering most of the [Here Maps REST API](https://developer.here.com/documentation) any help is appreciated!
