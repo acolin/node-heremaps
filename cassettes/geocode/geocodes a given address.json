@@ -1,0 +1,95 @@
+[
+  {
+    "scope": "https://geocoder.api.here.com:443",
+    "method": "GET",
+    "path": "/6.2/geocode.json?searchtext=rio%20guadalquivir%20422A%2C%20san%20pedro%20garza%20garcia%2C%20NL%2C%20Mexico&app_id=Sec29c57bKMo2R0nHgSM&app_code=uXDx5FkbC9AGKOvP7zwZvg&gen=8",
+    "body": "",
+    "status": 200,
+    "response": {
+      "Response": {
+        "MetaInfo": {
+          "Timestamp": "2016-03-09T23:39:39.179+0000"
+        },
+        "View": [
+          {
+            "_type": "SearchResultsViewType",
+            "ViewId": 0,
+            "Result": [
+              {
+                "Relevance": 1,
+                "MatchLevel": "houseNumber",
+                "MatchQuality": {
+                  "Country": 1,
+                  "State": 1,
+                  "City": 1,
+                  "Street": [
+                    0.81
+                  ],
+                  "HouseNumber": 1
+                },
+                "MatchType": "interpolated",
+                "Location": {
+                  "LocationId": "NT_UnBqjqe1xyP9l4..1txF6B_0IjMBB",
+                  "LocationType": "address",
+                  "DisplayPosition": {
+                    "Latitude": 25.6588793,
+                    "Longitude": -100.3583098
+                  },
+                  "NavigationPosition": [
+                    {
+                      "Latitude": 25.6590096,
+                      "Longitude": -100.358271
+                    }
+                  ],
+                  "MapView": {
+                    "TopLeft": {
+                      "Latitude": 25.6600035,
+                      "Longitude": -100.3595569
+                    },
+                    "BottomRight": {
+                      "Latitude": 25.6577552,
+                      "Longitude": -100.3570627
+                    }
+                  },
+                  "Address": {
+                    "Label": "Calle Río Guadalquivir Oriente 422A, Del Valle, 66220 San Pedro Garza García, NL, México",
+                    "Country": "MEX",
+                    "State": "NL",
+                    "City": "San Pedro Garza García",
+                    "District": "Del Valle",
+                    "Street": "Calle Río Guadalquivir Oriente",
+                    "HouseNumber": "422A",
+                    "PostalCode": "66220",
+                    "AdditionalData": [
+                      {
+                        "value": "México",
+                        "key": "CountryName"
+                      },
+                      {
+                        "value": "Nuevo León",
+                        "key": "StateName"
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "cache-control": "public, max-age=86400",
+      "content-type": "application/json;charset=utf-8",
+      "date": "Wed, 09 Mar 2016 23:39:38 GMT",
+      "server": "Apache-Coyote/1.1",
+      "x-nlp-irt": "143939",
+      "x-nlp-log": "Z2NfYz1NRVggZ2NfeD1xYS5jX2l4LmYgZ2NfbD1ob3VzZU51bWJlciBnY19tPWFk",
+      "x-nlp-tid": "faa5761d-ce7c-47ac-9dbd-544d9f63ed3d",
+      "x-served-by": "i-2432aca0.us-east-1c",
+      "content-length": "1038",
+      "connection": "Close"
+    }
+  }
+]

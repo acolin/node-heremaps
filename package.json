@@ -37,7 +37,8 @@
     "gulp-mocha": "^2.0.0",
     "gulp-nsp": "^2.1.0",
     "gulp-plumber": "^1.0.0",
-    "isparta": "^4.0.0"
+    "isparta": "^4.0.0",
+    "nock-vcr-recorder-mocha": "^0.3.2"
   },
   "eslintConfig": {
     "extends": "xo-space/esnext",
@@ -45,7 +46,10 @@
       "mocha": true
     },
     "rules": {
-      "curly": [2, "multi"]
+      "curly": [
+        2,
+        "multi"
+      ]
     }
   },
   "repository": "git@github.com:acolin/node-heremaps.git",
