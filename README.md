@@ -43,7 +43,7 @@ var matrixRoutingParams = {
   mode: "fastest;car;traffic:enabled;" //this mode is set by default
 };
 
-gmAPI.matrixRouting(matrixRoutingParams, function(err, result){
+hmAPI.matrixRouting(matrixRoutingParams, function(err, result){
   console.log(result);
 });
 ``` 
