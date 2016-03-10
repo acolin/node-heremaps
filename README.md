@@ -25,7 +25,7 @@ var config = {
   app_id:   '<YOUR-APP-ID>', // to use Google Maps for Work
   app_code: '<YOUR-APP-CODE>', // to use Google Maps for Work
 };
-var hmAPI = new GoogleMapsAPI(enterpriseConfig);
+var hmAPI = new HereMapsAPI(config);
 
 // geocode API
 var geocodeParams = {
