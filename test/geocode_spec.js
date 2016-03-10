@@ -1,10 +1,10 @@
 import {spy, expect} from 'chai';
-import geocode from '../lib/geocode';
+import _geocode from '../lib/geocode';
 import vcr from "nock-vcr-recorder-mocha";
 import defaultRequest from 'request';
 import API_KEYS from './mocks/api_keys';
 
-@geocode
+@_geocode
 class Stub {
   constructor() {
     this.config = API_KEYS;
