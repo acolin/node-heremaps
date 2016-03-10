@@ -21,10 +21,7 @@ describe('makeRequest', () => {
       {
         searchtext: 'garza sada 1000, monterrey, nl'
       },
-      {
-        subdomain: 'geocoder',
-        path: 'geocode.json'
-      },
+      'https://geocoder.api.here.com/6.2/geocode.json',
       ''
     ];
 

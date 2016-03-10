@@ -6,12 +6,34 @@
   "ACCEPTED_PARAMS": {
     "geocode": {
       "searchtext": "string"
+    },
+    "calculatematrix": {
+      "start0": "string",
+      "start1": "string",
+      "start2": "string",
+      "start3": "string",
+      "start4": "string",
+      "start5": "string",
+      "start6": "string",
+      "start7": "string",
+      "start8": "string",
+      "start9": "string",
+      "destination0": "string",
+      "destination1": "string",
+      "destination2": "string",
+      "destination3": "string",
+      "destination4": "string",
+      "destination5": "string",
+      "destination6": "string",
+      "destination7": "string",
+      "destination8": "string",
+      "destination9": "string",
+      "mode": "string",
+      "departure": "string"
     }
   },
   "HEREMAPS_ENDPOINTS": {
-    "geocode": {
-      "subdomain": "geocoder",
-      "path": "geocode.json"
-    }
+    "geocode": "https://geocoder.api.here.com/6.2/geocode.json",
+    "calculatematrix": "https://route.api.here.com/routing/7.2/calculatematrix.json"
   }
 }
