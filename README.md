@@ -1,29 +1,51 @@
-# node-heremaps [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Here maps API wrapper for Node.js
+# Here Maps API for Node.js
 
-## Installation
+Based on the [Google Maps API wrapper for Node.js](https://github.com/moshen/node-googlemaps)
 
-```sh
-$ npm install --save node-heremaps
+This library implements the following Here Maps APIs.
+
+* [REST API](https://developer.here.com/documentation)
+
+### Installation
+
+```
+npm install node-heremaps
 ```
 
-## Usage
+### What does it cover
+[Maps API REST SERVICES](https://developer.here.com/documentation):
 
-```js
-var nodeHeremaps = require('node-heremaps');
+* [Geocoder](https://developer.here.com/rest-apis/documentation/geocoder/topics/resource-geocode.html)
+* [Matrix Routing](https://developer.here.com/rest-apis/documentation/routing/topics/resource-calculate-matrix.html)
 
-nodeHeremaps('Rainbow');
-```
-## License
+### Usage
 
-MIT © [Arnoldo Rodriguez Colin]()
+```javascript
+var config = {
+  app_id:   '<YOUR-APP-ID>', // to use Google Maps for Work
+  app_code: '<YOUR-APP-CODE>', // to use Google Maps for Work
+};
+var hmAPI = new GoogleMapsAPI(enterpriseConfig);
 
+// geocode API
+var geocodeParams = {
+  "searchtext":    "121, Curtain Road, EC2A 3AD, London UK"
+};
 
-[npm-image]: https://badge.fury.io/js/node-heremaps.svg
-[npm-url]: https://npmjs.org/package/node-heremaps
-[travis-image]: https://travis-ci.org/acolin/node-heremaps.svg?branch=master
-[travis-url]: https://travis-ci.org/acolin/node-heremaps
-[daviddm-image]: https://david-dm.org/acolin/node-heremaps.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/acolin/node-heremaps
-[coveralls-image]: https://coveralls.io/repos/acolin/node-heremaps/badge.svg
-[coveralls-url]: https://coveralls.io/r/acolin/node-heremaps
+hmAPI.geocode(geocodeParams, function(err, result){
+  console.log(result);
+});
+
+// reverse geocode API
+var matrixRoutingParams = {
+  start0: "25.6586716,-100.3583278"",
+  destination0: "25.6522234,-100.2942806",
+  mode: "fastest;car;traffic:enabled;" //this mode is set by default
+};
+
+gmAPI.matrixRouting(matrixRoutingParams, function(err, result){
+  console.log(result);
+});
+``` 
+
+Contributions and new issues are welcome!
