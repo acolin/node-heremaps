@@ -37,7 +37,7 @@ hmAPI.geocode(geocodeParams, function(err, result){
   console.log(result);
 });
 
-// reverse geocode API
+// matrix routing API
 var matrixRoutingParams = {
   start0: "25.6586716,-100.3583278",
   destination0: "25.6522234,-100.2942806",
